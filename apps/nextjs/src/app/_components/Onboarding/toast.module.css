@@ -1,0 +1,25 @@
+.toast {
+  position: fixed;
+  bottom: 5rem;
+  right: 1rem;
+  max-width: calc(100% - 2rem);
+  background-color: rgb(239, 68, 68);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  animation: slideIn 0.3s ease-out;
+  z-index: 40;
+  pointer-events: none;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

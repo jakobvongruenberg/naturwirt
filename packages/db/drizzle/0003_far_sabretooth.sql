@@ -1,0 +1,1 @@
+ALTER TABLE "farmers_measure" ALTER COLUMN "applicable_land" DROP NOT NULL;

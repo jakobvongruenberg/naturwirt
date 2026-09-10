@@ -1,0 +1,86 @@
+{
+  "name": "@farmers/ui",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./*": "./src/*.tsx"
+  },
+  "license": "MIT",
+  "scripts": {
+    "add": "pnpm dlx shadcn-ui add",
+    "clean": "rm -rf .turbo node_modules",
+    "format": "prettier --check . --ignore-path ../../.gitignore --ignore-path ../../.prettierignore",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@farmers/language": "workspace:*",
+    "@farmers/shared": "workspace:*",
+    "@hookform/resolvers": "^3.3.4",
+    "@radix-ui/react-accordion": "^1.2.0",
+    "@radix-ui/react-alert-dialog": "^1.0.4",
+    "@radix-ui/react-avatar": "^1.0.4",
+    "@radix-ui/react-checkbox": "^1.0.4",
+    "@radix-ui/react-context-menu": "^2.1.4",
+    "@radix-ui/react-dialog": "^1.0.4",
+    "@radix-ui/react-dropdown-menu": "^2.0.6",
+    "@radix-ui/react-hover-card": "^1.0.6",
+    "@radix-ui/react-icons": "^1.3.0",
+    "@radix-ui/react-label": "^2.0.2",
+    "@radix-ui/react-navigation-menu": "^1.1.4",
+    "@radix-ui/react-popover": "^1.0.6",
+    "@radix-ui/react-progress": "^1.0.3",
+    "@radix-ui/react-radio-group": "^1.1.3",
+    "@radix-ui/react-select": "^1.2.2",
+    "@radix-ui/react-separator": "^1.0.3",
+    "@radix-ui/react-slider": "^1.1.2",
+    "@radix-ui/react-slot": "^1.0.2",
+    "@radix-ui/react-switch": "^1.0.3",
+    "@radix-ui/react-tabs": "^1.0.4",
+    "@radix-ui/react-toast": "^1.1.5",
+    "@radix-ui/react-toggle": "^1.0.3",
+    "@radix-ui/react-toggle-group": "^1.1.0",
+    "@radix-ui/react-tooltip": "^1.0.7",
+    "@tanstack/react-query": "^5.18.1",
+    "@tanstack/react-query-devtools": "^5.18.1",
+    "@tanstack/react-table": "^8.17.3",
+    "class-variance-authority": "^0.7.0",
+    "cmdk": "^0.2.1",
+    "cmk": "^0.1.1",
+    "lodash": "^4.17.21",
+    "lucide-react": "^0.323.0",
+    "next-themes": "^0.2.1",
+    "react-day-picker": "^8.10.0",
+    "react-hook-form": "^7.50.1",
+    "sonner": "^1.4.0",
+    "tailwind-merge": "^2.2.1",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@farmers/eslint-config": "workspace:^0.2.0",
+    "@farmers/prettier-config": "workspace:^0.1.0",
+    "@farmers/tailwind-config": "workspace:^0.1.0",
+    "@farmers/tsconfig": "workspace:^0.1.0",
+    "@types/lodash": "^4.17.16",
+    "@types/react": "^18.2.55",
+    "eslint": "^8.56.0",
+    "prettier": "^3.2.5",
+    "react": "18.2.0",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3",
+    "zod": "^3.22.4"
+  },
+  "peerDependencies": {
+    "react": "18.2.0",
+    "zod": "^3.22.4"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@farmers/eslint-config/base",
+      "@farmers/eslint-config/react"
+    ]
+  },
+  "prettier": "@farmers/prettier-config"
+}

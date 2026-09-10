@@ -1,0 +1,38 @@
+{
+  "name": "@farmers/shared",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "exports": {
+    "./app/*": "./src/app/*.ts",
+    "./common/*": "./src/common/*.ts",
+    "./common/dayjs": "./src/common/dayjs/index.ts",
+    "./common/zod": "./src/common/zod/index.ts",
+    "./enums/*": "./src/enums/*.ts",
+    "./errors/*": "./src/errors/*.ts"
+  },
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf .turbo node_modules",
+    "lint": "eslint .",
+    "lint:fix": "yarn lint --fix",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@farmers/eslint-config": "workspace:^0.2.0",
+    "@farmers/prettier-config": "workspace:^0.1.0",
+    "@farmers/tsconfig": "workspace:^0.1.0",
+    "@types/node": "^20.11.13",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "@farmers/eslint-config/base"
+    ]
+  },
+  "prettier": "@farmers/prettier-config"
+}

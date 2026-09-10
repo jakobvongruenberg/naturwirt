@@ -1,0 +1,1 @@
+ALTER TABLE "farmers_measure" DROP COLUMN IF EXISTS "location";

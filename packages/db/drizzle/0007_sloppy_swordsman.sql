@@ -1,0 +1,1 @@
+ALTER TABLE "farmers_measure" ADD COLUMN "publication_source_label" varchar(255);

@@ -1,0 +1,442 @@
+ID,Key,English,German
+1,HomePage.PopularMeasures,Popular Measures,Beliebte Maßnahmen
+2,HomePage.Login,Login,Anmelden
+3,HomePage.SignUp,Sign up,Registrieren
+4,HomePage.MyMeasures,My Measures,Meine Maßnahmen
+5,HomePage.Loading,Loading...,Laden...
+6,Search.Placeholder,Select a location...,Wählen Sie einen Standort aus...
+7,Search.FindSubsidies,Find subsidies in your area,Finden Sie Subventionen in Ihrer Gegend
+8,Search.EnterPostcodeState,Enter your postcode or state,Geben Sie Ihre Postleitzahl oder Ihr Bundesland ein
+9,Search.NoneFound,No location found,Kein Standort gefunden
+10,Navbar.Label.Browse,Browse,Durchsuchen
+11,Navbar.Label.MyAccount,My Account,Mein Konto
+12,Navbar.Label.NotificationSettings,Notification Settings,Benachrichtigungseinstellungen
+13,Navbar.Label.AdminPortal,Admin Portal,Admin-Portal
+14,Navbar.Label.Logout,Logout,Abmelden
+15,Navbar.Label.NoRole,No role,Keine Rolle
+16,Navbar.Buttons.BackToSearch,Back to search results,Zurück zu den Suchergebnissen
+17,Navbar.Buttons.Share,Share,Teilen
+18,Navbar.Buttons.Copied,Copied!,Kopiert!
+19,Navbar.Buttons.Copy,Copy,Kopieren
+20,Measure.TableHeader.ID,ID,ID
+21,Measure.TableHeader.MeasureIdentifier,Measure Identifier,Maßnahmenkennung
+22,Measure.TableHeader.Title,Title,Titel
+23,Measure.TableHeader.Actions,Actions,Aktionen
+24,Measure.TableHeader.IsPublished,Is Published,Veröffentlicht
+25,Measure.Button.Archive,Archive,Archivieren
+26,Measure.Button.AddSurcharge,Add surcharge,Zuschlag hinzufügen
+27,Measure.Button.AddedToShortlist,Added to shortlist,Zur Merkliste hinzugefügt
+28,Measure.Button.AddToShortlist,Add to shortlist,Zur Merkliste hinzufügen
+29,Measure.Button.AddTo,Add to...,Hinzufügen zu...
+30,Measure.Button.Copy,Copy,Kopieren
+31,Measure.Button.SetDevValues,Set Dev Values,Entwicklungswerte festlegen
+32,Measure.Button.SaveDraft,Save draft,Entwurf speichern
+33,Measure.Button.Cancel,Cancel,Abbrechen
+34,Measure.Button.Publish,Publish,Veröffentlichen
+35,Measure.Button.CopyIdToClipBoard,Copy ID to clipboard,ID in die Zwischenablage kopieren
+36,Measure.Button.Remove,Remove,Entfernen
+37,Measure.Button.AddCondition,Add condition,Bedingung hinzufügen
+38,Measure.Button.AddRestriction,Add restriction,Einschränkung hinzufügen
+39,Measure.Button.AddBenefit,Add benefit,Vorteil hinzufügen
+40,Measure.Button.AddKeyDate,Add key date,Wichtiges Datum hinzufügen
+41,Measure.Button.AddCombination,Add combination,Kombination hinzufügen
+42,Measure.Button.AddApplicationStep,Add application step,Bewerbungsschritt hinzufügen
+43,Measure.Button.OpenMenu,Open menu,Menü öffnen
+44,Measure.Button.Edit,Edit,Bearbeiten
+45,Measure.Button.Delete,Delete,Löschen
+46,Measure.Button.Create,Create,Erstellen
+47,Measure.Label.Type,Type,Kategorie
+48,Measure.Label.By,By,Von
+49,Measure.Label.From,From,Von
+50,Measure.Label.Any,Any,Beliebig
+51,Measure.Label.Conventional,Conventional,Konventionell
+52,Measure.Label.Organic,Organic,Biologisch
+53,Measure.Label.DueBy,Due by,Fällig bis
+54,Measure.Label.Hectare,ha,ha
+55,Measure.Label.MoveToActive,Move to active,Zu aktiv verschieben
+56,Measure.Label.ImplementationStart,Implementation start,Umsetzungsbeginn
+57,Measure.Label.Active,Active,Aktiv
+58,Measure.Label.Complete,complete,Abgeschlossen
+59,Measure.Label.CreateNewMeasure,Create new measure,Neue Maßnahme erstellen
+60,Measure.Label.MeasureIdentifier,Measure identifier,Maßnahmenkennung
+61,Measure.Label.MeasureTitleLong,Measure Title: Long *,Maßnahmentitel: Lang *
+62,Measure.Label.MeasureTitleLongDescription,A descriptive title for this measure. This will display on the Measure detail page.,Ein beschreibender Titel für diese Maßnahme. Dieser wird auf der Maßnahmendetailseite angezeigt.
+63,Measure.Label.MeasureTitleShort,Measure Title: Short *,Maßnahmentitel: Kurz *
+64,Measure.Label.MeasureTitleShortDescription,A short title for this measure. This will display on the Measure card.,Ein kurzer Titel für diese Maßnahme. Dieser wird auf der Maßnahmenkarte angezeigt.
+65,Measure.Label.ProgramTitle,Program Title *,Programmtitel *
+66,Measure.Label.ProgramTitleDescription,Title of the Program the Measure is associated to.,"Titel des Programms, dem die Maßnahme zugeordnet ist."
+67,Measure.Label.PublicationDate,Publication Date *,Veröffentlichungsdatum *
+68,Measure.Label.PublicationDateDescription,When was the Measure information derived?,Wann wurden die Maßnahmeninformationen abgeleitet?
+69,Measure.Label.NoSelection,Select a date,Wählen Sie ein Datum
+70,Measure.Label.PublicationSource,Publication Source *,Veröffentlichungsquelle *
+71,Measure.Label.PublicationSourceDescription,Where do the information come from?,Woher stammen die Informationen?
+72,Measure.Label.ApplicationDate,Application Date *,Bewerbungsdatum *
+73,Measure.Label.ApplicationDateDescription,Date by which the Application needs to be handed in.,"Datum, bis zu dem die Bewerbung eingereicht werden muss."
+74,Measure.Label.AvailableArea,Available Area *,Verfügbares Gebiet *
+75,Measure.Label.AvailableAreaDescription,Choose the land in which this Measure is available to apply for.,"Wählen Sie das Land aus, in dem diese Maßnahme beantragt werden kann."
+76,Measure.Label.SubsidyValue,Subsidy Value *,Förderwert *
+77,Measure.Label.SubsidyValueDescription,Amount of Money that can be applied for.,"Geldbetrag, der beantragt werden kann."
+78,Measure.Label.MeasureOneValue,This Measure has one value,Diese Maßnahme hat einen Wert
+79,Measure.Label.MeasureMultipleValues,This Measure has multiple values,Diese Maßnahme hat mehrere Werte
+80,Measure.Label.SubsidyAmount,Subsidy Amount,Förderbetrag
+81,Measure.Label.ConventionalSubsidyAmount,Conventional Subsidy Amount,Konventioneller Förderbetrag
+82,Measure.Label.AddSurcharges,Add Surcharges,Zuschläge hinzufügen
+83,Measure.Label.OrganicSubsidyAmount,Organic Subsidy Amount,Biologischer Förderbetrag
+84,Measure.Label.IncludeWarningMessage,Include warning message,Warnmeldung einschließen
+85,Measure.Label.CombinationSurcharges,Only certain combinations of surcharges are available together.,Nur bestimmte Kombinationen von Zuschlägen sind zusammen verfügbar.
+86,Measure.Label.ReadMore,Read more here.,Lesen Sie hier mehr.
+87,Measure.Label.ProviderEmail,Provider Email,Anbieter-E-Mail
+88,Measure.Label.ProviderEmailDescription,Contact Email to contact the provider of the measure.,Kontakt-E-Mail zur Kontaktaufnahme mit dem Anbieter der Maßnahme.
+89,Measure.Label.ProviderPhoneNumber,Provider Phone Number,Anbieter-Telefonnummer
+90,Measure.Label.ProviderPhoneNumberDescription,Contact phone number of Provider or Administrative Body.,Kontakttelefonnummer des Anbieters oder der Verwaltungsstelle.
+91,Measure.Label.Effort,Effort *,Aufwand *
+92,Measure.Label.EffortDescription,An expert Rating on how difficult the measure will be to implement.,"Eine Expertenbewertung, wie schwierig die Umsetzung der Maßnahme sein wird."
+93,Measure.Label.IncludeTooltip,Include tool tip,Tooltip einschließen
+94,Measure.Label.Duration,Duration *,Dauer *
+95,Measure.Label.DurationDescription,How many years will the measure be implemented?,Wie viele Jahre wird die Maßnahme umgesetzt?
+96,Measure.Label.Situation,Situation *,Situation *
+97,Measure.Label.SituationDescription,Is the measure bound to one specific area on the farm or can be rotated over the farm?,Ist die Maßnahme an einen bestimmten Bereich auf dem Hof gebunden oder kann sie über den Hof rotiert werden?
+98,Measure.Label.WhatsInvolved,What's Involved? *,Was ist involviert? *
+99,Measure.Label.WhatsInvolvedDescription,Describe what is involved in implementing this Measure.,"Beschreiben Sie, was bei der Umsetzung dieser Maßnahme involviert ist."
+100,Measure.Label.CultivationConditions,Cultivation Conditions *,Anbaubedingungen *
+101,Measure.Label.CultivationConditionsDescription,What are the restrictions for the cultivation?,Was sind die Einschränkungen für den Anbau?
+102,Measure.Label.PlantProtectionMeasures,Plant Protection Measures,Pflanzenschutzmaßnahmen
+103,Measure.Label.PlantProtectionMeasuresDescription,What are the restrictions for the PPM?,Was sind die Einschränkungen für die Pflanzenschutzmaßnahmen?
+104,Measure.Label.Fertilizer,Fertilizer,Düngemittel
+105,Measure.Label.FertilizerDescription,What are the restrictions for the Fertilizer use?,Was sind die Einschränkungen für den Düngemitteleinsatz?
+106,Measure.Label.KeyBenefits,Key Benefits,Hauptvorteile
+107,Measure.Label.KeyBenefitsDescription,What are the ecological or economical Benefits for the farmer?,Was sind die ökologischen oder wirtschaftlichen Vorteile für den Landwirt?
+108,Measure.Label.KeyDates,Key Dates,Wichtige Termine
+109,Measure.Label.KeyDatesDescription,Important Date(s) by or from which a restriction is specified.,"Wichtige(s) Datum(en), bis zu dem/denen eine Einschränkung festgelegt ist."
+110,Measure.Label.AreaDetermination,Area Determination,Flächenbestimmung
+111,Measure.Label.AreaDeterminationDescription,Specifications for the area(s) of determination.,Spezifikationen für die zu bestimmende(n) Fläche(n).
+112,Measure.Label.MaximumOperation,Maximum Operation,Maximaler Betrieb
+113,Measure.Label.MaximumArea,Maximum Area,Maximale Fläche
+114,Measure.Label.MinimumArea,Minimum Area,Minimale Fläche
+115,Measure.Label.Form,Form,Formular
+116,Measure.Label.Combination,Combinations *,Kombinationen *
+117,Measure.Label.CombinationDescription,Are there additional combinations that can be done?,"Gibt es zusätzliche Kombinationen, die durchgeführt werden können?"
+118,Measure.Label.ApplicationSteps,Application Steps *,Bewerbungsschritte *
+119,Measure.Label.ApplicationStepsDescription,A description of the steps needed for applying to this Measure.,"Eine Beschreibung der Schritte, die für die Bewerbung für diese Maßnahme erforderlich sind."
+120,Measure.Label.PublishView,Publish View,Ansicht veröffentlichen
+121,Measure.Label.PublishViewDescription,Check this box to make the measure visible to the public.,"Aktivieren Sie dieses Kontrollkästchen, um die Maßnahme öffentlich sichtbar zu machen."
+122,Measure.Label.MakeThisMeasurePublic,Make this measure public,Diese Maßnahme öffentlich machen
+123,Measure.Label.Setting,Setting *,Einstellung *
+124,Measure.Label.SettingDescription,On what land type is this measure allowed?,Auf welchem Landtyp ist diese Maßnahme erlaubt?
+125,Measure.Label.MeasureNotFound,Measure not found,Maßnahme nicht gefunden
+126,Measure.Label.NoTitle,No title,Kein Titel
+127,Measure.Placeholder.EnterLongTitle,Enter long title,Langen Titel eingeben
+128,Measure.Placeholder.ProgramTitle,AUKM / ÖR / Private (XX-XX),AUKM / ÖR / Privat (XX-XX)
+129,Measure.Placeholder.PublicationSource,https://,https://
+130,Measure.Placeholder.EnterTitle,Enter title,Titel eingeben
+131,Measure.Placeholder.EnterAmount,Enter amount,Betrag eingeben
+132,Measure.Placeholder.EnterEmailAddress,Enter email address,E-Mail-Adresse eingeben
+133,Measure.Placeholder.EnterPhoneNumber,Enter phone number,Telefonnummer eingeben
+134,Measure.Placeholder.ChooseEffortLevel,Choose effort level,Aufwandsniveau wählen
+135,Measure.Placeholder.EnterValue,Enter value,Wert eingeben
+136,Measure.Placeholder.ChooseSetting,Choose setting,Einstellung wählen
+137,Measure.Placeholder.ChooseSituation,Choose situation,Situation wählen
+138,Measure.Placeholder.EnterDescription,Enter description,Beschreibung eingeben
+139,Measure.Placeholder.Description,Description,Beschreibung
+140,Measure.Placeholder.EnterCondition,Enter condition,Bedingung eingeben
+141,Measure.Placeholder.EnterRestriction,Enter restriction,Einschränkung eingeben
+142,Measure.Placeholder.EnterBenefit,Enter benefit,Vorteil eingeben
+143,Measure.Placeholder.EnterIdentifier,Enter identifier,Kennung eingeben
+144,Measure.Placeholder.TooltipMessage,Tooltip message,Tooltip-Nachricht
+145,Measure.Options.Setting.ArableLand,Arable land,Ackerland
+146,Measure.Options.Setting.PastureLand,Pasture land,Weideland
+147,Measure.Options.Setting.NoSpecification,No specification,Keine Angabe
+148,Measure.Options.Setting.Other,Other,Andere
+149,Measure.Options.Situation.Rotating,Rotating,Rotierend
+150,Measure.Options.Situation.WholeFarm,Whole farm,Ganzer Betrieb
+151,Measure.Options.Situation.Fixed,Fixed,Fest
+152,Measure.Options.Combination.Yes,"Yes, there are available combinations","Ja, es gibt verfügbare Kombinationen"
+153,Measure.Options.Combination.No,"No, available combinations",Keine verfügbaren Kombinationen
+154,Measure.Tab.Shortlist,Shortlist,Merkliste
+155,Measure.Tab.Active,Active,Aktiv
+156,Measure.Tab.Archived,Archived,Archiviert
+157,Measure.Tab.Message.AddShortlist,Add your first measure to shortlist,Fügen Sie Ihre erste Maßnahme zur Merkliste hinzu
+158,Measure.Tab.Message.NoActiveMeasures,You have no active measures,Sie haben keine aktiven Maßnahmen
+159,Measure.Tab.Message.NoArchivedMeasures,You have no archived measures,Sie haben keine archivierten Maßnahmen
+160,Measure.Tab.Action.VisitBrowse,Visit browse,Durchsuchen besuchen
+161,Measure.Tab.Action.AddFromShortlist,Add from shortlist,Aus Merkliste hinzufügen
+162,Measure.Tab.Action.ViewActiveMeasures,View active measures,Aktive Maßnahmen anzeigen
+163,Measure.Toast.Cancelled,Cancelled measure creation,Maßnahme erfolgreich abgebrochen
+164,Measure.Toast.AlreadyExists,A measure already exists with this identifier,Maßnahme existiert bereits
+165,Measure.Toast.CreationError,An error occurred while creating the measure,Fehler beim Erstellen der Maßnahme
+166,Measure.Toast.FormSubmissionError,An error occurred while submitting the form,Fehler beim Einreichen des Formulars
+167,Measure.Toast.UpdateSuccess,Measure updated successfully,Maßnahme erfolgreich aktualisiert
+168,Measure.Toast.CreationSuccess,Measure created successfully,Maßnahme erfolgreich erstellt
+169,Footer.Label.ThankYouPartners,Thank you to our partners,Danke an unsere Partner
+170,Footer.Label.TermsOfService,Terms of services,Nutzungsbedingungen
+171,Footer.Label.PrivacyPolicy,Privacy policy,Datenschutzrichtlinie
+172,Profile.Details.Label.MyAccount,My Account,Mein Konto
+173,Profile.Details.Label.MyProfile,My Profile,Mein Profil
+174,Profile.Details.Label.PersonalDetails,Personal details and sign in preferences,Persönliche Details und Anmeldeeinstellungen
+175,Profile.Details.Label.Notifications,Manage your notifications,Verwalten Sie Ihre Benachrichtigungen
+176,Profile.Details.Label.MyFarms,My Farms,Meine Betriebe
+177,Profile.Details.Label.YouDontHaveAnyFarms,You don't have any farms,Sie haben keine Betriebe
+178,Profile.Details.Label.DeleteAccount,Delete Account,Konto löschen
+179,Profile.Details.Label.Name,Name,Name
+180,Profile.Details.Label.Email,Email,E-Mail
+181,Profile.Details.Button.BackToAccount,Back to my account,Zurück zu meinem Konto
+182,Profile.Details.Button.Save,Save,Speichern
+183,Profile.Details.Button.Edit,Edit,Bearbeiten
+184,Profile.Details.Button.DeleteAccount,Delete Account,Konto löschen
+185,Profile.Notification.Label.Notifications,Notifications,Benachrichtigungen
+186,Profile.Notification.Label.EmailNotifications,Email notifications,E-Mail-Benachrichtigungen
+187,Profile.Notification.Label.ReceiveEmails,Receive emails about your account activity,E-Mails über Ihre Kontoaktivitäten erhalten
+188,Profile.Notification.Toast.Updated,Notification settings updated,Benachrichtigungseinstellungen erfolgreich aktualisiert
+189,Profile.Farm.Label.NoFarmFound,No farm found,Kein Betrieb gefunden
+190,Profile.Farm.Label.AddAnotherFarm,Add another farm,Einen weiteren Betrieb hinzufügen
+191,Profile.Farm.Label.CreateFarm,Create you first farm,Erstellen Sie Ihren ersten Betrieb
+192,Profile.Farm.Label.NoAnimals,No animals,Keine Tiere
+193,Onboarding.Buttons.Next,Next,Weiter
+194,Onboarding.Buttons.Back,Back,Zurück
+195,Onboarding.Label.CompleteProfile,Complete profile,Profil vervollständigen
+196,Onboarding.Label.Welcome,Welcome,Willkommen
+197,Onboarding.Step.Button.Organic,Organic,Biologisch
+198,Onboarding.Step.Button.Conventional,Conventional,Konventionell
+199,Onboarding.Step.Button.YesIHaveSome,"Yes, I have some","Ja, ich habe welche"
+200,Onboarding.Step.Button.OnlyPlants,Only plants,Nur Pflanzen
+201,Onboarding.Step.Button.Edit,Edit,Bearbeiten
+202,Onboarding.Step.Button.Save,Save,Speichern
+203,Onboarding.Step.Label.WhereFarmLocated,Where is your farm located?,Wo befindet sich Ihr Betrieb?
+204,Onboarding.Step.Label.WhichTypeOfFarmingAreYouCurrentlyOperating,Which type of farming are you currently operating?,Welche Art von Landwirtschaft betreiben Sie derzeit?
+205,Onboarding.Step.Label.YouCanChangeThisLater,You can change this in your account settings later,Sie können dies später in Ihren Kontoeinstellungen ändern
+206,Onboarding.Step.Label.WhatYouLikeToCallThisFarm,What would you like to call this farm?,Wie möchten Sie diesen Betrieb nennen?
+207,Onboarding.Step.Label.HowBigIsYourFarm,How big is your farm?,Wie groß ist Ihr Betrieb?
+208,Onboarding.Step.Label.Hectare,ha,ha
+209,Onboarding.Step.Label.DoYouHaveAnimals,Do you have any animals?,Haben Sie Tiere?
+210,Onboarding.Step.Label.WhichTypeOfAnimals,Which type of animals?,Welche Art von Tieren?
+211,Onboarding.Step.Label.WhatIsYourRoughageConsumingLivestockUnit,What is your Roughage Consuming Livestock Unit?,Wie groß ist Ihre Rauhfutter verzehrende Großvieheinheit?
+212,Onboarding.Step.Label.PickAtLeastOne,Pick at least one,Wählen Sie mindestens eine Option
+213,Onboarding.Step.Label.ReviewYourFarmDetails,Review your farm details,Überprüfen Sie Ihre Betriebsdetails
+214,Onboarding.Step.Label.Location,Location,Standort
+215,Onboarding.Step.Label.FarmingType,Farming Type,Betriebsart
+216,Onboarding.Step.Label.FarmSize,Farm Size,Betriebsgröße
+217,Onboarding.Step.Label.Animals,Animals,Tiere
+218,Onboarding.Step.Label.FarmName,Farm Name,Betriebsname
+219,Onboarding.Step.Label.UpdateFarmDetails,Update Your Farm Details,Betriebsdetails aktualisieren
+220,Onboarding.Step.Label.NotSpecified,Not specified,Nicht angegeben
+221,Onboarding.Step.Label.HasAnimalsLiveStockUnit,Has animals: {{animalTypes}}; Livestock Unit: {{livestockUnit}},"Hat Tiere: {{animalTypes}}, Großvieheinheit: {{livestockUnit}}"
+222,Onboarding.Step.Label.NoAnimals,No animals,Keine Tiere
+223,Onboarding.Step.Placeholder.EnterPostcodeState,Enter your postcode or state,Geben Sie Ihre Postleitzahl oder Ihr Bundesland ein
+224,Onboarding.Step.Placeholder.SelectFarmingType,Select farming type,Wählen Sie die Betriebsart
+225,Onboarding.Step.Placeholder.EnterFarmName,Enter your farm name,Geben Sie Ihren Betriebsnamen ein
+226,Onboarding.Step.Options.Cows,Cows,Kühe
+227,Onboarding.Step.Options.Poultry,Poultry,Geflügel
+228,Onboarding.Step.Options.Pigs,Pigs,Schweine
+229,Onboarding.Step.Options.Sheep,Sheep,Schafe
+230,Onboarding.Step.Options.Goats,Goats,Ziegen
+231,Onboarding.Step.Options.Others,Others,Andere
+232,Browse.Button.ResetFilters,Reset filters,Filter zurücksetzen
+233,Browse.Button.SuggestUpdates,Suggest updates,Aktualisierungen vorschlagen
+234,Browse.Button.Newest,Newest,Neueste
+235,Browse.Button.Oldest,Oldest,Älteste
+236,Browse.Button.HighestValue,Highest value,Höchster Wert
+237,Browse.Button.LowestValue,Lowest value,Niedrigster Wert
+238,Browse.Button.HighestEffort,Highest effort,Höchster Aufwand
+239,Browse.Button.LowestEffort,Lowest effort,Niedrigster Aufwand
+240,Browse.Button.ShortestDuration,Shortest duration,Kürzeste Dauer
+241,Browse.Button.LongestDuration,Longest duration,Längste Dauer
+242,Browse.Label.Location,Location,Standort
+243,Browse.Label.ErrorLoadingMeasures,Error loading measure {{uri}}. Please reach out to info@naturwirt.org,Fehler beim Laden der Maßnahme {{uri}}. Bitte wenden Sie sich an info@naturwirt.org
+244,Browse.Label.Created,Created {{dateCreated}},Erstellt am {{dateCreated}}
+245,Browse.Label.LastUpdated,Last updated {{dateUpdated}},Zuletzt aktualisiert am {{dateUpdated}}
+246,Browse.Label.AvailableMeasures,Available Measures,Verfügbare Maßnahmen
+247,Browse.Label.ApplicableArea,Applicable Area,Anwendbare Fläche
+248,Browse.Label.Loading,Loading...,Laden...
+249,Browse.Label.SortBy,Sort by,Sortieren nach
+250,Browse.Label.Duration,Duration,Dauer
+251,Browse.Label.Setting,Setting,Einstellung
+252,Browse.Label.Situation,Situation,Situation
+253,Browse.Label.WhatsInvolved,What's involved?,Was ist beteiligt?
+254,Browse.Label.MaximumOperation,Maximum operation,Maximaler Betrieb
+255,Browse.Label.MaximumArea,Maximum area,Maximale Fläche
+256,Browse.Label.MinimumArea,Minimum area,Minimale Fläche
+257,Browse.Label.Form,Form,Formular
+258,Browse.Label.KeyBenefits,Key benefits,Hauptvorteile
+259,Browse.Label.KeyDatesActivities,Key dates & activities,Wichtige Termine & Aktivitäten
+260,Browse.Label.Supplements,Supplements,Ergänzungen
+261,Browse.Label.Contact,Contact,Kontakt
+262,Browse.Label.Complete,Complete,Abgeschlossen
+263,Browse.Label.Archived,Archived,Archiviert
+264,Browse.Label.Unarchive,Unarchive,Aus Archiv holen
+265,Browse.Label.ApplyBy,Apply by,Bewerben bis
+266,Browse.Label.TotalAmount,Total amount,Gesamtbetrag
+267,Browse.Label.CombinationSurcharges,Only certain combinations of surcharges are available together.,Nur bestimmte Kombinationen von Zuschlägen sind zusammen verfügbar.
+268,Browse.Label.ReadMore,Read more here,Hier mehr lesen
+269,Browse.Label.Apply,Apply,Bewerben
+270,Browse.Label.PrivateNote,Add a private note...,Private Notiz hinzufügen...
+271,Browse.Label.NoExactMatches,No exact matches,Keine exakten Treffer
+272,Browse.Label.TryChangingOrRemovingSomeOfYourFilters,Try changing or removing some of your filters.,"Versuchen Sie, einige Ihrer Filter zu ändern oder zu entfernen."
+273,Browse.Label.NoResultsInYourArea,No results in your area,Keine Ergebnisse in Ihrem Gebiet
+274,Browse.Label.NoMeasuresAvailableOnThePlatformYet, We do not have measures available on the platform yet for your area. Try adjusting your search area.,"Für Ihr Gebiet sind derzeit keine Maßnahmen auf der Plattform verfügbar. Versuchen Sie, Ihren Suchbereich anzupassen."
+275,Browse.EffortRating.Effort,Effort,Aufwand
+276,Browse.EffortRating.Low,Low,Niedrig
+277,Browse.EffortRating.Medium,Medium,Mittel
+278,Browse.EffortRating.High,High,Hoch
+279,Browse.EffortRatingCard.LowEffort,Low effort,Niedriger Aufwand
+280,Browse.EffortRatingCard.LowEffortDescription,This rating is based on expert opinion and the experience of farmers using this platform. Give your own assessment now to improve the evaluation of the measure.,"Diese Bewertung basiert auf Expertenmeinungen und der Erfahrung von Landwirten, die diese Plattform nutzen. Geben Sie jetzt Ihre eigene Einschätzung ab, um die Bewertung der Maßnahme zu verbessern."
+281,Browse.EffortRatingCard.SuggestNewRating,Suggest a new rating,Neue Bewertung vorschlagen
+282,Browse.EffortRatingCard.MediumEffort,Medium effort,Mittlerer Aufwand
+283,Browse.EffortRatingCard.MediumEffortDescription,This rating is based on expert opinion and the experience of farmers using this platform. It indicates a moderate level of effort required. Give your own assessment now to improve the evaluation of the measure.,"Diese Bewertung basiert auf Expertenmeinungen und der Erfahrung von Landwirten, die diese Plattform nutzen. Sie deutet auf einen moderaten Aufwand hin. Geben Sie jetzt Ihre eigene Einschätzung ab, um die Bewertung der Maßnahme zu verbessern."
+284,Browse.EffortRatingCard.HighEffort,High effort,Hoher Aufwand
+285,Browse.EffortRatingCard.HighEffortDescription,This rating is based on expert opinion and the experience of farmers using this platform. It signifies a high level of effort required. Give your own assessment now to improve the evaluation of the measure.,"Diese Bewertung basiert auf Expertenmeinungen und der Erfahrung von Landwirten, die diese Plattform nutzen. Sie bedeutet einen hohen Aufwand. Geben Sie jetzt Ihre eigene Einschätzung ab, um die Bewertung der Maßnahme zu verbessern."
+286,FiltersBar.Buttons.DeselectAll,Deselect All,Alle abwählen
+287,FiltersBar.Buttons.SelectAll,Select All,Alle auswählen
+288,FiltersBar.Buttons.Apply,Apply,Anwenden
+289,FiltersBar.Buttons.ApplyFilters,Apply filters,Filter anwenden
+290,FiltersBar.Buttons.Reset,Reset,Zurücksetzen
+291,FiltersBar.Buttons.Value,Value,Wert
+292,FiltersBar.Buttons.Effort,Effort,Aufwand
+293,FiltersBar.Buttons.Low,Low,Niedrig
+294,FiltersBar.Buttons.Medium,Medium,Mittel
+295,FiltersBar.Buttons.High,High,Hoch
+296,FiltersBar.Buttons.TypeOfFarming,Type of farming,Art der Landwirtschaft
+297,FiltersBar.Buttons.Any,Any,Beliebig
+298,FiltersBar.Buttons.Conventional,Conventional,Konventionell
+299,FiltersBar.Buttons.Organic,Organic,Biologisch
+300,FiltersBar.Buttons.LandSetting,Land setting,Landnutzung
+301,FiltersBar.Buttons.ArableLand,Arable land,Ackerland
+302,FiltersBar.Buttons.PermanentGrassland,Permanent grassland,Dauergrünland
+303,FiltersBar.Buttons.PastureLand,Pasture land,Weideland
+304,FiltersBar.Buttons.NoSpecification,No specification,Keine Angabe
+305,FiltersBar.Buttons.Other,Other,Sonstiges
+306,FiltersBar.Buttons.Rotating,Rotating,Rotierend
+307,FiltersBar.Buttons.WholeFarm,Whole farm,Gesamter Betrieb
+308,FiltersBar.Buttons.Fixed,Fixed,Fest
+309,FiltersBar.Buttons.AUKM,AUKM,AUKM
+310,FiltersBar.Buttons.ÖR,ÖR,ÖR
+311,FiltersBar.Buttons.Private,Private,Privat
+312,FiltersBar.Buttons.VNS,VNS,VNS
+313,FiltersBar.Buttons.MoreFilters,More filters,Weitere Filter
+314,FiltersBar.Buttons.Close,Close,Schließen
+315,FiltersBar.Labels.AllFilters,All filters,Alle Filter
+316,FiltersBar.Labels.Value,Value,Wert
+317,FiltersBar.Labels.ValueDescription,"The value can vary based on if you’re operating with organic or conventional processes, and other surcharges you might add.","Der Wert kann variieren, je nachdem ob Sie biologisch oder konventionell wirtschaften, und abhängig von anderen Zuschlägen, die Sie möglicherweise hinzufügen."
+318,FiltersBar.Labels.MinimumValue,Minimum,Minimum
+319,FiltersBar.Labels.MaximumValue,Maximum,Maximum
+320,FiltersBar.Labels.Effort,Effort,Aufwand
+321,FiltersBar.Labels.EffortDescription,This score developed from expert opinion and the experience of farmers on this platform. You can provide your own assessment on individual measure pages to improve our evaluation of the measure.,"Diese Bewertung basiert auf Expertenmeinungen und den Erfahrungen von Landwirten auf dieser Plattform. Sie können Ihre eigene Einschätzung auf den einzelnen Maßnahmenseiten abgeben, um unsere Bewertung der Maßnahme zu verbessern."
+322,FiltersBar.Labels.TypeOfFarming,Type of farming,Art der Landwirtschaft
+323,FiltersBar.Labels.LandSetting,Land setting,Landnutzung
+324,FiltersBar.Labels.LandSituation,Land situation,Flächensituation
+325,FiltersBar.Labels.SubsidyProvider,Subsidy provider,Förderungsanbieter
+326,FiltersBar.Labels.EffortLowercase,effort,aufwand
+327,FiltersBar.Labels.And,and,und
+328,FiltersBar.Labels.Only,only,nur
+329,AccessRestricted.Message.CheckingAccess,Checking your access,Überprüfe Ihren Zugang
+330,AccessRestricted.Message.AccessRestricted,Access Restricted,Zugriff eingeschränkt
+331,AccessRestricted.Message.NoPrivileges,"Sorry, it seems that you don't have the privileges. If you believe this is an error","Entschuldigung, es scheint, dass Sie nicht die erforderlichen Berechtigungen haben. Wenn Sie glauben, dass dies ein Fehler ist"
+332,AccessRestricted.Message.LoggedInAs,You are logged in as {{email}} -,Sie sind angemeldet als {{email}} -
+333,AccessRestricted.Button.SignOut,Sign Out,Abmelden
+334,AccessRestricted.Button.ReachOut,Reach out to us,Kontaktieren Sie uns
+335,AccessRestricted.Button.SignIn,Sign In,Anmelden
+336,User.Toast.UpdateSuccessTitle,User Updated Successfully!,Benutzer erfolgreich aktualisiert!
+337,User.Toast.UpdateSuccessDescription,The user has been updated.,Der Benutzer wurde aktualisiert.
+338,User.Toast.UpdateErrorTitle,Error Updating User,Fehler beim Aktualisieren des Benutzers
+339,User.Toast.UpdateErrorDescription,An error occurred while updating the user.,Beim Aktualisieren des Benutzers ist ein Fehler aufgetreten.
+340,User.TableHeader.ID,ID,ID
+341,User.TableHeader.Name,Name,Name
+342,User.TableHeader.Email,Email,E-Mail
+343,User.TableHeader.Actions,Actions,Aktionen
+344,User.TableHeader.Notifications,Notifications,Benachrichtigungen
+345,User.Button.OpenMenu,Open menu,Menü öffnen
+346,User.Button.Edit,Edit,Bearbeiten
+347,User.Button.Save,Save,Speichern
+348,User.Button.EditUser,Edit User,Benutzer bearbeiten
+349,User.Dialog.EditUserTitle,Edit User,Benutzer bearbeiten
+350,User.DefaultName,Unknown,Unbekannt
+351,User.InputLabel.Name,Name,Name
+352,ForgotPassword.Button.SignIn,Return to sign in,Zurück zur Anmeldung
+353,ForgotPassword.Label.EmailAddress,Email address,E-Mail-Adresse
+354,ForgotPassword.Label.Title,Forgot your password?,Passwort vergessen?
+355,ForgotPassword.Label.Body,Enter your email address and we will send you a link to reset your password.,Geben Sie Ihre E-Mail-Adresse ein und wir senden Ihnen einen Link zum Zurücksetzen Ihres Passworts.
+356,ForgotPassword.Label.Success,"If your email address exists in our system, you will receive a password reset link shortly.","Wenn Ihre E-Mail-Adresse in unserem System existiert, erhalten Sie in Kürze einen Link zum Zurücksetzen des Passworts."
+357,ForgotPassword.Toast.Success,"If your email address exists in our system, a password reset email has been sent.","Wenn Ihre E-Mail-Adresse in unserem System existiert, wurde eine E-Mail zum Zurücksetzen des Passworts gesendet."
+358,ForgotPassword.Toast.Error,An error occurred.,Ein Fehler ist aufgetreten.
+359,AuthModal.Button.SignUp,Sign up,Registrieren
+360,AuthModal.Button.LogIn,Log in,Anmelden
+361,AuthModal.Button.ForgotYourPassword,Forgot your password?,Passwort vergessen?
+362,AuthModal.Label.WelcomeToForderassistent,Welcome to Naturwirt,Willkommen bei Naturwirt
+363,AuthModal.Label.EmailPlaceholder,name@example.com,name@example.com
+364,AuthModal.Label.Email,Email,E-Mail
+365,AuthModal.Label.CreateAPasswordPlaceholder,Create a password,Passwort erstellen
+366,AuthModal.Label.Password,Password,Passwort
+367,AuthModal.Label.ConfirmPassword,Confirm password,Passwort bestätigen
+368,AuthModal.Label.IAgreeToForderassistent,I agree to Naturwirt,Ich stimme Naturwirt zu
+369,AuthModal.Label.And,and,und
+370,AuthModal.Label.TermsOfUse,Terms of Use,Nutzungsbedingungen
+371,AuthModal.Label.PrivacyPolicy,Privacy Policy,Datenschutzrichtlinie
+372,AuthModal.Label.EnterYourPassword,Enter your password,Geben Sie Ihr Passwort ein
+373,DeleteAccountModal.Button.PermanentlyDeleteAccount,Permanently delete account,Konto dauerhaft löschen
+374,DeleteAccountModal.Button.Cancel,Cancel,Abbrechen
+375,DeleteAccountModal.Label.AreYouSureYouWantToDeleteYourAccount,Are you sure you want to delete your account?,"Sind Sie sicher, dass Sie Ihr Konto löschen möchten?"
+376,DeleteAccountModal.Label.ThisActionCannotBeUndone,This action cannot be undone. This will permanently delete your entire account and all your measures will be deleted.,Diese Aktion kann nicht rückgängig gemacht werden. Dadurch wird Ihr gesamtes Konto dauerhaft gelöscht und alle Ihre Maßnahmen werden gelöscht.
+377,DeleteAccountModal.Label.TypeInYourEmail,Type in your email,Geben Sie Ihre E-Mail ein
+378,DeleteAccountModal.Label.ToConfirm,to confirm.,zu bestätigen.
+379,DeleteAccountModal.Label.EnterEmail,Enter email,E-Mail eingeben
+380,DeleteAccountModal.Label.AnErrorOccurredPleaseTryAgain,An error occurred. Please try again.,Es ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.
+381,DeleteAccountModal.Label.EmailConfirmationDoesNotMatch,Email confirmation does not match,Die E-Mail-Bestätigung stimmt nicht überein
+382,DeleteMeasureModal.Button.Cancel,Cancel,Abbrechen
+383,DeleteMeasureModal.Button.PermanentlyDeleteMeasure,Permanently delete measure,Maßnahme dauerhaft löschen
+384,DeleteMeasureModal.Label.AreYouSureYouWantToDeleteThisMeasure,Are you sure you want to delete this measure?,Möchten Sie diese Maßnahme wirklich löschen?
+385,DeleteMeasureModal.Label.ThisActionCannotBeUndone,This action cannot be undone. This will permanently delete this measure.,Diese Aktion kann nicht rückgängig gemacht werden. Dadurch wird die Maßnahme dauerhaft gelöscht.
+386,DeleteMeasureModal.Label.MeasureDeletedSuccessfully,Measure deleted successfully,Maßnahme erfolgreich gelöscht
+387,DeleteMeasureModal.Label.AnErrorOccuredPleaseTryAgain,An error occurred. Please try again.,Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.
+388,Validator.index.Label.PasswordMustBeAtLeast8Characters,Password must be at least 8 characters,Das Passwort muss mindestens 8 Zeichen lang sein
+389,Validator.index.Label.Required,Required,Erforderlich
+390,Validator.index.Label.PasswordsDoNotMatch,Passwords do not match,Die Passwörter stimmen nicht überein
+391,Validator.index.Label.MeasureIdentifierRequired,Measure identifier is required,Maßnahmenkennung ist erforderlich
+392,Validator.index.Label.ProgramTitleFormat,"Program Title must be in the format ""ABC - DEF""","Der Programmtitel muss das Format ""ABC - DEF"" haben"
+393,Validator.index.Label.MeasureTitleLongRequired,Measure title (long) is required,Maßnahmentitel (lang) ist erforderlich
+394,Validator.index.Label.MeasureTitleShortRequired,Measure title (short) is required,Maßnahmentitel (kurz) ist erforderlich
+395,Validator.index.Label.PublicationDateRequired,Publication date must be a valid date,Das Veröffentlichungsdatum muss ein gültiges Datum sein
+396,Validator.index.Label.PublicationSourceRequired,Publication source is required,Veröffentlichungsquelle ist erforderlich
+397,Validator.index.Label.ApplicationDateRequired,Application date must be a valid date,Das Antragsdatum muss ein gültiges Datum sein
+398,Validator.index.Label.ApplicableAreaNotEmpty,Applicable area must not be empty if provided,"Der anwendbare Bereich darf nicht leer sein, wenn angegeben"
+399,Validator.index.Label.ConventionalSubsidyPositiveInteger,Conventional subsidy must be a positive integer,Die konventionelle Subvention muss eine positive ganze Zahl sein
+400,Validator.index.Label.OrganicSubsidyPositiveInteger,Organic subsidy must be a positive integer,Die Bio-Subvention muss eine positive ganze Zahl sein
+401,Validator.index.Label.InvalidEmail,Invalid email address,Ungültige E-Mail-Adresse
+402,Validator.index.Label.InvalidPhoneNumber,Invalid phone number,Ungültige Telefonnummer
+403,Validator.index.Label.InvalidEffortValue,"Invalid effort value. Must be High, Medium or Low","Ungültiger Aufwandswert. Muss Hoch, Mittel oder Niedrig sein"
+404,Validator.index.Label.EffortTooltipNotEmpty,Effort tooltip must not be empty if provided,"Aufwands-Tooltip darf nicht leer sein, wenn angegeben"
+405,Validator.index.Label.DurationPositiveInteger,Duration must be a positive integer,Die Dauer muss eine positive ganze Zahl sein
+406,Validator.index.Label.DurationTooltipNotEmpty,Duration tooltip must not be empty if provided,"Dauer-Tooltip darf nicht leer sein, wenn angegeben"
+407,Validator.index.Label.InvalidSettingValue,"Invalid setting value. Must be Arable land, Pasture land, No specification or Other","Ungültiger Einstellungswert. Muss Ackerland, Grünland, Keine Angabe oder Sonstiges sein"
+408,Validator.index.Label.SettingTooltipNotEmpty,Setting tooltip must not be empty if provided,"Einstellungs-Tooltip darf nicht leer sein, wenn angegeben"
+409,Validator.index.Label.SituationInvalid,"Invalid situation value. Must be Rotating, Whole farm or Fixed","Ungültiger Situationswert. Muss Wechselnd, Gesamtbetrieb oder Fest sein"
+410,Validator.index.Label.SituationTooltipNotEmpty,Situation tooltip must not be empty if provided,"Situations-Tooltip darf nicht leer sein, wenn angegeben"
+411,Validator.index.Label.WhatsInvolvedNotEmpty,What is involved must not be empty if provided,"Was beinhaltet darf nicht leer sein, wenn angegeben"
+412,Validator.index.Label.CultivationConditionsNotEmpty,Cultivation conditions must not be empty if provided,"Anbaubedingungen dürfen nicht leer sein, wenn angegeben"
+413,Validator.index.Label.CombinationsDescriptionNotEmpty,Combinations description must not be empty if provided,"Kombinationsbeschreibung darf nicht leer sein, wenn angegeben"
+414,Validator.index.Label.AtleastOneApplicationStep,There must be at least one application step,Es muss mindestens einen Antragsschritt geben
+415,Validator.index.Label.ApplicationDescriptionNotEmpty,Application description must not be empty if provided,"Antragsbeschreibung darf nicht leer sein, wenn angegeben"
+416,Validator.index.Label.AvailableCombinationNotEmpty,Available combination must not be empty if provided,"Verfügbare Kombination darf nicht leer sein, wenn angegeben"
+417,Validator.index.Label.TotalAmountPositiveInteger,Total amount must be a positive integer,Der Gesamtbetrag muss eine positive ganze Zahl sein
+418,Validator.index.Label.SubidyValueAtleastOne,At least one subsidy value must be provided,Mindestens ein Förderwert muss angegeben werden
+419,Validator.Auth.Label.PasswordDontMatch,Passwords don't match,Die Passwörter stimmen nicht überein
+420,NotFound.Button.ReturnHome,Return home,Zurück zur Startseite
+421,NotFound.Label.NotFound,Not Found (404),Nicht gefunden (404)
+422,NotFound.Label.SorryWeCantSeemToFindThePageYoureLookingFor,"Sorry, we can't seem to find the page you're looking for","Entschuldigung, wir können die von Ihnen gesuchte Seite nicht finden"
+423,NotFound.Label.IfYouBelieveThisIsAnError,"If you believe this is an error,","Wenn Sie glauben, dass dies ein Fehler ist,"
+424,NotFound.Label.ReachOutToUs,reach out to us.,kontaktieren Sie uns.
+425,Admin.Navbar.Measures,Measures,Maßnahmen
+426,Admin.Navbar.Users,Users,Benutzer
+427,Admin.Navbar.CreateMeasure,Create measure,Maßnahme erstellen
+428,Admin.Navbar.SignOut,Sign out,Abmelden
+429,Admin.Version,Version,Version
+430,UI.Table.RowsDefaultName,rows,Zeilen
+431,UI.Table.TableDefaultName,table,Tabelle
+432,UI.Table.Showing,Showing,Anzeigen
+433,UI.Table.DownloadCSV,Download CSV,CSV herunterladen
+434,UI.Table.Columns,Columns,Spalten
+435,UI.Table.NoResults,No results,Keine Ergebnisse
+436,UI.Table.Page,Page,Seite
+437,UI.Table.PageSize,Page size,Seitengröße
+438,UI.Table.Search,Search,Suchen
+439,UI.Table.Yes,Yes,Ja
+440,UI.Table.No,No,Nein
+441,UI.Toast.Error,An error occurred.,Ein Fehler ist aufgetreten.

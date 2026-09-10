@@ -1,0 +1,40 @@
+{
+  "name": "@farmers/scripts",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src"
+  },
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf .turbo node_modules",
+    "lint": "eslint .",
+    "lint:fix": "pnpm lint --fix",
+    "load-members": "pnpm with-env tsx ./src/loadMembers.ts",
+    "format": "prettier --check \"**/*.{mjs,ts,md,json}\"",
+    "script": "pnpm with-env tsx ./src/script.ts",
+    "typecheck": "tsc --noEmit",
+    "with-env": "dotenv -e ../../.env --"
+  },
+  "devDependencies": {
+    "@farmers/env": "workspace:*",
+    "@farmers/eslint-config": "workspace:*",
+    "@farmers/prettier-config": "workspace:*",
+    "@farmers/tsconfig": "workspace:*",
+    "eslint": "^8.56.0",
+    "prettier": "^3.2.5",
+    "tsx": "^4.7.1",
+    "typescript": "^5.3.3"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "@farmers/eslint-config/base"
+    ],
+    "ignorePatterns": [
+      "**/*.js"
+    ]
+  },
+  "prettier": "@farmers/prettier-config"
+}

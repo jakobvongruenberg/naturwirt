@@ -1,0 +1,43 @@
+{
+  "name": "naturwirt",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=20.11.0"
+  },
+  "packageManager": "pnpm@8.15.1",
+  "scripts": {
+    "build": "turbo build",
+    "clean": "rm -rf node_modules",
+    "clean:workspaces": "turbo clean && pnpm clean",
+    "db:drop": "pnpm -F db drop",
+    "db:push": "pnpm -F db push",
+    "db:studio": "pnpm -F db studio",
+    "db:generate": "pnpm -F db generate",
+    "db:migrate": "pnpm -F db migrate",
+    "db:seed": "pnpm -F db seed",
+    "dev": "turbo dev --parallel",
+    "format": "turbo format --continue -- --cache --cache-location node_modules/.cache/.prettiercache",
+    "format:fix": "turbo format --continue -- --write --cache --cache-location node_modules/.cache/.prettiercache",
+    "lint": "turbo lint --continue -- --cache --cache-location node_modules/.cache/.eslintcache",
+    "lint:fix": "turbo lint --continue -- --fix --cache --cache-location node_modules/.cache/.eslintcache",
+    "lint:ws": "pnpm dlx sherif@latest",
+    "migrate": "pnpm with-env tsx src/migrate.ts --config=drizzle.config.ts",
+    "postinstall": "pnpm lint:ws",
+    "typecheck": "turbo typecheck",
+    "doppler": "pnpm exec ./tooling/scripts/doppler.sh"
+  },
+  "prettier": "@farmers/prettier-config",
+  "pnpm": {
+    "patchedDependencies": {
+      "trpc-openapi@1.2.0": "patches/trpc-openapi@1.2.0.patch"
+    }
+  },
+  "devDependencies": {
+    "@farmers/prettier-config": "workspace:^0.1.0",
+    "@turbo/gen": "^1.12.3",
+    "prettier": "^3.2.5",
+    "turbo": "^1.12.3",
+    "typescript": "^5.3.3"
+  }
+}

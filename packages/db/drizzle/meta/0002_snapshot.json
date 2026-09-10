@@ -1,0 +1,775 @@
+{
+  "id": "c2fab315-a2e7-421a-ab9c-2cbe09c05493",
+  "prevId": "59851bf5-0c3d-44c4-8904-28047510242a",
+  "version": "7",
+  "dialect": "postgresql",
+  "tables": {
+    "public.farmers_account": {
+      "name": "farmers_account",
+      "schema": "",
+      "columns": {
+        "user_id": {
+          "name": "user_id",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "type": {
+          "name": "type",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "provider": {
+          "name": "provider",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "provider_account_id": {
+          "name": "provider_account_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "refresh_token": {
+          "name": "refresh_token",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "access_token": {
+          "name": "access_token",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "expires_at": {
+          "name": "expires_at",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "token_type": {
+          "name": "token_type",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "scope": {
+          "name": "scope",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "id_token": {
+          "name": "id_token",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "session_state": {
+          "name": "session_state",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "farmers_account_user_id_farmers_user_id_fk": {
+          "name": "farmers_account_user_id_farmers_user_id_fk",
+          "tableFrom": "farmers_account",
+          "tableTo": "farmers_user",
+          "columnsFrom": [
+            "user_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {
+        "farmers_account_provider_provider_account_id_pk": {
+          "name": "farmers_account_provider_provider_account_id_pk",
+          "columns": [
+            "provider",
+            "provider_account_id"
+          ]
+        }
+      },
+      "uniqueConstraints": {}
+    },
+    "public.farmers_session": {
+      "name": "farmers_session",
+      "schema": "",
+      "columns": {
+        "session_token": {
+          "name": "session_token",
+          "type": "text",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "user_id": {
+          "name": "user_id",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "expires": {
+          "name": "expires",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "farmers_session_user_id_farmers_user_id_fk": {
+          "name": "farmers_session_user_id_farmers_user_id_fk",
+          "tableFrom": "farmers_session",
+          "tableTo": "farmers_user",
+          "columnsFrom": [
+            "user_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    },
+    "public.farmers_user": {
+      "name": "farmers_user",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "uuid",
+          "primaryKey": true,
+          "notNull": true,
+          "default": "gen_random_uuid()"
+        },
+        "name": {
+          "name": "name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "role": {
+          "name": "role",
+          "type": "user_role",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'user'"
+        },
+        "email": {
+          "name": "email",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "password": {
+          "name": "password",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "email_verified": {
+          "name": "email_verified",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "image": {
+          "name": "image",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "notifications_enabled": {
+          "name": "notifications_enabled",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false,
+          "default": true
+        },
+        "user_measures": {
+          "name": "user_measures",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    },
+    "public.farmers_verification": {
+      "name": "farmers_verification",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "uuid",
+          "primaryKey": true,
+          "notNull": true,
+          "default": "gen_random_uuid()"
+        },
+        "user_id": {
+          "name": "user_id",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "expires_at": {
+          "name": "expires_at",
+          "type": "timestamp (3)",
+          "primaryKey": false,
+          "notNull": false,
+          "default": "CURRENT_TIMESTAMP(3) + INTERVAL '2 months'"
+        },
+        "used_at": {
+          "name": "used_at",
+          "type": "timestamp (3)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp (3)",
+          "primaryKey": false,
+          "notNull": false,
+          "default": "CURRENT_TIMESTAMP(3)"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp (3)",
+          "primaryKey": false,
+          "notNull": false,
+          "default": "CURRENT_TIMESTAMP(3)"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "farmers_verification_user_id_farmers_user_id_fk": {
+          "name": "farmers_verification_user_id_farmers_user_id_fk",
+          "tableFrom": "farmers_verification",
+          "tableTo": "farmers_user",
+          "columnsFrom": [
+            "user_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    },
+    "public.farmers_verification_token": {
+      "name": "farmers_verification_token",
+      "schema": "",
+      "columns": {
+        "identifier": {
+          "name": "identifier",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "token": {
+          "name": "token",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "expires": {
+          "name": "expires",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {
+        "farmers_verification_token_identifier_token_pk": {
+          "name": "farmers_verification_token_identifier_token_pk",
+          "columns": [
+            "identifier",
+            "token"
+          ]
+        }
+      },
+      "uniqueConstraints": {}
+    },
+    "public.farmers_farm": {
+      "name": "farmers_farm",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "bigserial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "user_id": {
+          "name": "user_id",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "name": {
+          "name": "name",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "farm_size": {
+          "name": "farm_size",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "type_of_farming": {
+          "name": "type_of_farming",
+          "type": "type_of_farming",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'conventional'"
+        },
+        "location": {
+          "name": "location",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "animal_type": {
+          "name": "animal_type",
+          "type": "animal_type[]",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "livestock_unit": {
+          "name": "livestock_unit",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "farmers_farm_user_id_farmers_user_id_fk": {
+          "name": "farmers_farm_user_id_farmers_user_id_fk",
+          "tableFrom": "farmers_farm",
+          "tableTo": "farmers_user",
+          "columnsFrom": [
+            "user_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    },
+    "public.farmers_measure": {
+      "name": "farmers_measure",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "bigserial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "measure_identifier": {
+          "name": "measure_identifier",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "measure_title_long": {
+          "name": "measure_title_long",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "measure_title_short": {
+          "name": "measure_title_short",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "program_title": {
+          "name": "program_title",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "publication_date": {
+          "name": "publication_date",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "publication_source": {
+          "name": "publication_source",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "application_date": {
+          "name": "application_date",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "applicable_land": {
+          "name": "applicable_land",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "applicable_kreis": {
+          "name": "applicable_kreis",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "subsidy_value": {
+          "name": "subsidy_value",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "subsidy_value_conventional": {
+          "name": "subsidy_value_conventional",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "subsidy_value_organic": {
+          "name": "subsidy_value_organic",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "surcharges": {
+          "name": "surcharges",
+          "type": "json",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "include_warning": {
+          "name": "include_warning",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "provider_email": {
+          "name": "provider_email",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "provider_phone_number": {
+          "name": "provider_phone_number",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "effort": {
+          "name": "effort",
+          "type": "effort",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "effort_tool_tip": {
+          "name": "effort_tool_tip",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "duration": {
+          "name": "duration",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "duration_tool_tip": {
+          "name": "duration_tool_tip",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "setting": {
+          "name": "setting",
+          "type": "setting",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "setting_tool_tip": {
+          "name": "setting_tool_tip",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "situation": {
+          "name": "situation",
+          "type": "situation",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "situation_tool_tip": {
+          "name": "situation_tool_tip",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "whats_involved": {
+          "name": "whats_involved",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "cultivation_conditions": {
+          "name": "cultivation_conditions",
+          "type": "text[]",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "plant_protection_measures": {
+          "name": "plant_protection_measures",
+          "type": "text[]",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "fertilizer": {
+          "name": "fertilizer",
+          "type": "text[]",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "key_benefits": {
+          "name": "key_benefits",
+          "type": "text[]",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "key_dates": {
+          "name": "key_dates",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "area_optimization": {
+          "name": "area_optimization",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "combinations": {
+          "name": "combinations",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "combinations_description": {
+          "name": "combinations_description",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "application_steps": {
+          "name": "application_steps",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "application_description": {
+          "name": "application_description",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "available_combination": {
+          "name": "available_combination",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "date_created": {
+          "name": "date_created",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "date_updated": {
+          "name": "date_updated",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "total_amount": {
+          "name": "total_amount",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "type_of_farming": {
+          "name": "type_of_farming",
+          "type": "type_of_farming",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'conventional'"
+        },
+        "contacts": {
+          "name": "contacts",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "notes": {
+          "name": "notes",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "zipcodes": {
+          "name": "zipcodes",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "publish_view": {
+          "name": "publish_view",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true,
+          "default": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {
+        "farmers_measure_measure_identifier_unique": {
+          "name": "farmers_measure_measure_identifier_unique",
+          "nullsNotDistinct": false,
+          "columns": [
+            "measure_identifier"
+          ]
+        }
+      }
+    }
+  },
+  "enums": {
+    "public.measure_status": {
+      "name": "measure_status",
+      "schema": "public",
+      "values": [
+        "active",
+        "shortlisted",
+        "archived"
+      ]
+    },
+    "public.user_role": {
+      "name": "user_role",
+      "schema": "public",
+      "values": [
+        "admin",
+        "user"
+      ]
+    },
+    "public.animal_type": {
+      "name": "animal_type",
+      "schema": "public",
+      "values": [
+        "cow",
+        "pig",
+        "poultry",
+        "sheep_goats",
+        "others"
+      ]
+    },
+    "public.type_of_farming": {
+      "name": "type_of_farming",
+      "schema": "public",
+      "values": [
+        "conventional",
+        "organic"
+      ]
+    },
+    "public.effort": {
+      "name": "effort",
+      "schema": "public",
+      "values": [
+        "high",
+        "medium",
+        "low"
+      ]
+    },
+    "public.key_date_type": {
+      "name": "key_date_type",
+      "schema": "public",
+      "values": [
+        "by",
+        "from"
+      ]
+    },
+    "public.setting": {
+      "name": "setting",
+      "schema": "public",
+      "values": [
+        "arable land",
+        "grassland",
+        "no specification",
+        "other"
+      ]
+    },
+    "public.situation": {
+      "name": "situation",
+      "schema": "public",
+      "values": [
+        "rotating",
+        "whole farm",
+        "fixed"
+      ]
+    },
+    "public.subsidy_provider": {
+      "name": "subsidy_provider",
+      "schema": "public",
+      "values": [
+        "AUKM",
+        "ÖR",
+        "VNS",
+        "Private"
+      ]
+    }
+  },
+  "schemas": {},
+  "_meta": {
+    "columns": {},
+    "schemas": {},
+    "tables": {}
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "@farmers/language",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "exports": {
+    "./*": [
+      "./src/*.ts",
+      "./src/*.tsx"
+    ]
+  },
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf .turbo node_modules",
+    "lint": "eslint .",
+    "lint:fix": "yarn lint --fix",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@farmers/shared": "workspace:*",
+    "zod-i18n-map": "^2.27.0"
+  },
+  "devDependencies": {
+    "@farmers/eslint-config": "workspace:^0.2.0",
+    "@farmers/prettier-config": "workspace:^0.1.0",
+    "@farmers/tsconfig": "workspace:^0.1.0",
+    "@types/node": "^20.11.13",
+    "eslint": "^8.56.0",
+    "tsx": "^4.7.1",
+    "typescript": "^5.3.3"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "@farmers/eslint-config/base"
+    ]
+  },
+  "prettier": "@farmers/prettier-config"
+}
